@@ -3,10 +3,10 @@ name: Docker Image CI
 on:
   push:
     tags:
-      - v*
+      - "v*"
 
 jobs:
-  build:
+  BuildAndDeploy:
     env:
       DOCKERHUB_USERNAME: "breda"
       DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
