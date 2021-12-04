@@ -1,2 +1,3 @@
 # fluentd-elasticsearch
-Fluentd Docker image with Elastic Search plugin installed.
+
+Fluentd Docker image with Elastic Search plugin installed. Nothing fancy.
