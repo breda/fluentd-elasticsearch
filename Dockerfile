@@ -17,3 +17,5 @@ RUN buildDeps="sudo make gcc g++ libc-dev" \
 COPY entrypoint.sh /bin/
 
 USER fluent
+ENTRYPOINT ["tini",  "--", "/bin/entrypoint.sh"]
+CMD ["fluentd"]
